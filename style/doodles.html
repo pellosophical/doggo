@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+     <header>
+        <a href="../index.html">
+            <h1 class="display">Doggo</h1>
+            <p>BarkBox Design System</p>
+          </a>
+      </header>
+      <ul class="nav-links mt4">        
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="color.html">Color</a></li>
+            <li><a href="doodles.html" class="active">Doodles</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="layer.html">Layer</a></li>
+            <li><a href="motion.html">Motion</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../components/library.html">Library</a></li>
+            <li><a href="../components/accordion.html">Accordion</a></li>
+            <li><a href="../components/alerts.html">Alerts</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Style</p>
+        <h1 class="head--xl">Doodles</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <p class="head--sm">Doodles live at the core of our brand.</p>
+      <p class="mt2">Dave Coverly is Bark's award-winning cartoonist. His doodles are the only approved illustration style for Bark, and
+        they appear on everything we do, from packaging to the walls in our offices.</p>
+
+      <h2 class="head mt4">Usage</h2>
+      <p>While doodles are a way to inject character into our product, they should be used carefully and with meaning, supplementing
+        content rather than distracting from it.</p>
+
+      <h3 class="head--sm mt4">Color</h3>
+      <p class="mt2">Doodles may be colorized to add emphasis to a particular idea or message. Color should be used thoughtfully, align
+        with the Bark palette, and we never add color to dogs.</p>
+      <section class="doodles--color mt3">        
+          <img src="../lib/img/doodle-yes.png" class="img--doodle">
+          <img src="../lib/img/doodle-no.png" class="img--doodle">        
+      </section>
+
+      <h3 class="head--sm mt4">Background</h3>
+      <p class="mt2">When doodles are shown on a colored background, they must be filled in white.</p>
+      <section class="doodles--bg">
+        <img src="../lib/img/doodle-bg-yes.jpg" class="img--doodle mt3">
+        <img src="../lib/img/doodle-bg-no.jpg" class="img--doodle mt3">
+      </section>
+
+      <h3 class="head--sm mt4">Composition</h3>
+      <p class="mt2">Doodles can take a good, clean design and make it Bark. They can be used alongside photos, as the centerpiece of a
+        design, or as animations. In all situations, they should be carefully implemented and never distract from more important
+        content.</p>
+      <section class="doodles--comp">
+          <img src="../lib/img/doodle-comp-a.jpg" class="img--doodle mt3">
+          <img src="../lib/img/doodle-comp-b.jpg" class="img--doodle mt3">
+      </section>
+
+      <footer>      
+      <p>Doggo&mdash;BarkBox Design System v1.0</p>
+      <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+    </footer>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin=" anonymous "></script>
+  <script src="../lib/js/functions.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+      <header>
+        <a href="../index.html">
+          <h1 class="display">Doggo</h1>
+          <p>BarkBox Design System</p>
+        </a>
+      </header>
+      <ul class="nav-links mt4">
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../style/color.html">Color</a></li>
+            <li><a href="../style/doodles.html">Doodles</a></li>
+            <li><a href="../style/grid.html">Grid</a></li>
+            <li><a href="../style/layer.html">Layer</a></li>
+            <li><a href="../style/motion.html">Motion</a></li>
+            <li><a href="../style/typography.html">Typography</a></li>
+            <li><a href="../style/iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="library.html">Library</a></li>
+            <li><a href="accordion.html">Accordion</a></li>
+            <li><a href="alerts.html" class="active">Alerts</a></li>
+            <li><a href="button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Components</p>
+        <h1 class="head--xl">Alert</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container tab--container">
+
+      <input type="radio" name="tabs" id="alert--usage" checked="checked">
+      <label for="alert--usage">Usage</label>
+
+      <!-- <input type="radio" name="tabs" id="alert--style">
+      <label for="alert--style">Style</label> -->
+
+      <input type="radio" name="tabs" id="alert--code">
+      <label for="alert--code">Code</label>
+
+      <div class="tab--content" id="alert--usage--content">
+        <p class="head--sm mt4">Communicates a state resulting from a user's interaction with a feature.</p>
+        <p class="mt2">We use alerts to communicate important information to users throughout their experience. Alerts should be clear and
+          recognizable, but never interrupt a user's ability to interact with affected elements.</p>
+        <div class="mt2">
+          <div class="alert alert--generic"><img src="../lib/img/info-icon.png" class="alert--icon">
+            <p>Welcome to BarkBox!</p><img src="../lib/img/alert-close-dark.png" class="alert--close"></div>
+          <div class="alert alert--success"><img src="../lib/img/check-icon.png" class="alert--icon">
+            <p>Your order was successful.</p><img src="../lib/img/alert-close-dark.png" class="alert--close"></div>
+          <div class="alert alert--warning"><img src="../lib/img/warning-icon.png" class="alert--icon">
+            <p>Your payment is processing.</p><img src="../lib/img/alert-close-dark.png" class="alert--close"></div>
+          <div class="alert alert--error"><img src="../lib/img/error-icon.png" class="alert--icon">
+            <p>Your payment was declined.</p><img src="../lib/img/alert-close-light.png" class="alert--close"></div>
+        </div>
+      </div>
+
+      <!-- <div class="tab--content" id="alert--style--content">
+        <h2 class="head--lg mt4 ">Background</h2>
+        <table class="mt3">
+          <tr>
+            <th>Alert</th>
+            <th>SCSS</th>
+            <th>&nbsp;</th>
+          </tr>
+          <tr>
+            <td>Generic</td>
+            <td>$blue--03</td>
+            <td>
+              <div class="swatch--mini swatch--generic"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Success</td>
+            <td>$green--01</td>
+            <td>
+              <div class="swatch--mini swatch--success"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Warning</td>
+            <td>$yellow--02</td>
+            <td>
+              <div class="swatch--mini swatch--warning"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Error</td>
+            <td>$red--02</td>
+            <td>
+              <div class="swatch--mini swatch--error"></div>
+            </td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Color</h2>
+        <table class="mt3">
+          <tr>
+            <th>Property</th>
+            <th>Color</th>
+          </tr>
+          <tr>
+            <td>Generic</td>
+            <td>$black--03</td>
+          </tr>
+          <tr>
+            <td>Success</td>
+            <td>$black--03</td>
+          </tr>
+          <tr>
+            <td>Warning</td>
+            <td>$black--03</td>
+          </tr>
+          <tr>
+            <td>Error</td>
+            <td>$white--01</td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Typography</h2>
+        <table class="mt3">
+          <tr>
+            <th>Property</th>
+            <th>Size</th>
+          </tr>
+          <tr>
+            <td>Icon</td>
+            <td>1rem</td>
+          </tr>
+          <tr>
+            <td>Copy</td>
+            <td>0.875rem</td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Spacing</h2>
+        <table class="mt3">
+          <tr>
+            <th>Property</th>
+            <th>Size</th>
+          </tr>
+          <tr>
+            <td>Icon</td>
+            <td>1rem</td>
+          </tr>
+          <tr>
+            <td>Copy</td>
+            <td>1rem</td>
+          </tr>
+          <tr>
+            <td>'X'</td>
+            <td>1rem</td>
+          </tr>
+        </table>
+      </div> -->
+
+      <div class="tab--content" id="alert--code--content">
+
+        <p class="head mt4">Generic</p>
+        <div class="alert alert--generic">
+          <img src="../lib/img/info-icon.png" class="alert--icon">
+          <p>Welcome to BarkBox!</p>
+          <img src="../lib/img/alert-close-dark.png" class="alert--close">
+        </div>
+        <p class="code--snippet mt2">&lt;div class="alert alert--generic"&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--icon"&gt;
+          <br> &nbsp;&nbsp;&lt;p&gt;Welcome to BarkBox!&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--close"&gt;
+          <br> &lt;/div&gt;
+        </p>
+
+        <p class="head mt4">Success</p>
+        <div class="alert alert--success">
+          <img src="../lib/img/check-icon.png" class="alert--icon">
+          <p>Welcome to BarkBox!</p>
+          <img src="../lib/img/alert-close-dark.png" class="alert--close">
+        </div>
+        <p class="code--snippet mt2">&lt;div class="alert alert--success"&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--icon"&gt;
+          <br> &nbsp;&nbsp;&lt;p&gt;Welcome to BarkBox!&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--close"&gt;
+          <br> &lt;/div&gt;
+        </p>
+
+        <p class="head mt4">Warning</p>
+        <div class="alert alert--warning">
+          <img src="../lib/img/warning-icon.png" class="alert--icon">
+          <p>Welcome to BarkBox!</p>
+          <img src="../lib/img/alert-close-dark.png" class="alert--close">
+        </div>
+        <p class="code--snippet mt2">&lt;div class="alert alert--warning"&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--icon"&gt;
+          <br> &nbsp;&nbsp;&lt;p&gt;Welcome to BarkBox!&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--close"&gt;
+          <br> &lt;/div&gt;
+        </p>
+
+        <p class="head mt4">Error</p>
+        <div class="alert alert--error">
+          <img src="../lib/img/error-icon.png" class="alert--icon">
+          <p>Welcome to BarkBox!</p>
+          <img src="../lib/img/alert-close-light.png" class="alert--close">
+        </div>
+        <p class="code--snippet mt2">&lt;div class="alert alert--error"&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--icon"&gt;
+          <br> &nbsp;&nbsp;&lt;p&gt;Welcome to BarkBox!&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;img src="../path/to/icon.png" class="alert--close"&gt;
+          <br> &lt;/div&gt;
+        </p>
+
+      </div>
+
+      <footer>
+        <p>Doggo&mdash;BarkBox Design System v1.0</p>
+        <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+      </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="../lib/js/functions.js"></script>
+
+</body>
+
+</html>

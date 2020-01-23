@@ -1,0 +1,238 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+     <header>
+        <a href="../index.html">
+            <h1 class="display">Doggo</h1>
+            <p>BarkBox Design System</p>
+          </a>
+      </header>
+      <ul class="nav-links mt4">        
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="color.html">Color</a></li>
+            <li><a href="doodles.html">Doodles</a></li>
+            <li><a href="grid.html" class="active">Grid</a></li>
+            <li><a href="layer.html">Layer</a></li>
+            <li><a href="motion.html">Motion</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../components/library.html">Library</a></li>
+            <li><a href="../components/accordion.html">Accordion</a></li>
+            <li><a href="../components/alerts.html">Alerts</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Style</p>
+        <h1 class="head--xl">Grid</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container tab--container">
+
+       <input type="radio" name="tabs" id="grid--design" checked="checked">
+      <label for="grid--design">Design</label>
+
+      <input type="radio" name="tabs" id="grid--code">
+      <label for="grid--code">Code</label>
+
+      <div class="tab--content" id="grid--design--content">
+
+        <p class="head--sm mt4">The grid provides the foundation for harmoniously positioning elements.</p>
+        <p class="mt2">The grid provides a flexible, mobile-first, device-agnostic layout system. It has features to control alignment,
+          order, and flow. </p>
+
+        <h2 class=" head--lg mt4 ">Structure</h2>
+        <p>Designing to the grid creates an experience that facilitates understanding and brings order to the page.</p>
+
+        <h3 class="head--sm mt4">Exponential grid</h3>
+        <p class="mt2">The width of the grid and content area grows exponentially and the margins always remain at 5%. The width of each
+          column continuiously grows and gutters remain fixed.</p>
+          <img src="../lib/img/expo-grid.jpg" class="mw50 mt3">        
+
+        <h3 class="head--sm mt4">Maximum width</h3>
+        <p class="mt2">The max width is 1600px, with the margins growing exponentially past that point.</p>        
+        <img src="../lib/img/max-grid.jpg" class="mw50 mt3">        
+
+        <h2 class="head--lg mt4 ">Breakpoints</h2>
+        <p>The structure of our grid adapts to different device widths to make use of space as a user's viewport size increases.</p>
+        <table class="mt3">
+          <tr>
+            <th>Name</th>
+            <th>Width</th>
+            <th>Gutter</th>
+          </tr>
+          <tr>
+            <td>xs</td>
+            <td>&#8804; 36rem</td>
+            <td>1rem</td>
+          </tr>
+          <tr>
+            <td>sm</td>
+            <td>> 36rem</td>
+            <td>1rem</td>
+          </tr>
+          <tr>
+            <td>md</td>
+            <td>> 48rem</td>
+            <td>1.5rem</td>
+          </tr>
+          <tr>
+            <td>lg</td>
+            <td>> 62rem</td>
+            <td>1.5rem</td>
+          </tr>
+          <tr>
+            <td>xl</td>
+            <td>> 72rem</td>
+            <td>2rem</td>
+          </tr>
+          <tr>
+            <td>xxl</td>
+            <td>> 100rem</td>
+            <td>2rem</td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Vertical rhythm</h2>
+        <p>We use a spacing scale based on powers of two that starts at 0.25rem, or 4px for most devices.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Scale</th>
+            <th>rem</th>
+            <th>px</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0rem</td>
+            <td>0px</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0.25rem</td>
+            <td>4px</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>0.5rem</td>
+            <td>8px</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>1rem</td>
+            <td>16px</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>2rem</td>
+            <td>32px</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>4rem</td>
+            <td>64px</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>8rem</td>
+            <td>128px</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="tab--content" id="grid--code--content">
+        <p class="head--sm mt4">With CSS grid, we no longer need a grid system or framework to build flexible, responsive layouts.</p>
+        <p class="mt2">We have tailored a system of mixins and utility classes to help align and speed the process of developing based on
+          the Doggo design system.</p>
+          <h2 class="head--lg mt4 ">Width</h2>        
+          <p>Code snippets for controlling grid width.</p>
+          <h3 class="head--sm mt3">Exponential</h3>
+        <p class="code--snippet mt2">&lt;div class="grid grid--expo"&gt;
+          <br> &nbsp;&nbsp;...      
+          <br> &lt;/div&gt;
+        </p>
+        <h3 class="head--sm mt4">Maximum width</h3>
+        <p class="code--snippet mt2">&lt;div class="grid grid--max"&gt;
+          <br> &nbsp;&nbsp;...      
+          <br> &lt;/div&gt;
+        </p>
+        <h2 class="head--lg mt4 ">Mixins</h2>
+        <p>Below you will find a collection of mixins created to rapidly build common layouts.</p>
+        <p class="code--snippet mt3">@mixin grid-thirds {
+          <br>&nbsp;&nbsp;display: grid;
+          <br>&nbsp;&nbsp;grid-template-columns: repeat(3,1fr);
+          <br>}</p>
+      </div>
+
+      <footer>      
+      <p>Doggo&mdash;BarkBox Design System v1.0</p>
+      <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+    </footer>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin=" anonymous "></script>
+  <script src="../lib/js/functions.js "></script>
+
+</body>
+
+</html>

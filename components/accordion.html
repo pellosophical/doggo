@@ -1,0 +1,262 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+      <header>
+        <a href="../index.html">
+          <h1 class="display">Doggo</h1>
+          <p>BarkBox Design System</p>
+        </a>
+      </header>
+      <ul class="nav-links mt4">
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../style/color.html">Color</a></li>
+            <li><a href="../style/doodles.html">Doodles</a></li>
+            <li><a href="../style/grid.html">Grid</a></li>
+            <li><a href="../style/layer.html">Layer</a></li>
+            <li><a href="../style/motion.html">Motion</a></li>
+            <li><a href="../style/typography.html">Typography</a></li>
+            <li><a href="../style/iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="library.html">Library</a></li>
+            <li><a href="accordion.html" class="active">Accordion</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Components</p>
+        <h1 class="head--xl">Accordion</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container tab--container">
+
+      <input type="radio" name="tabs" id="accordion--usage" checked="checked">
+      <label for="accordion--usage">Usage</label>
+
+      <!-- <input type="radio" name="tabs" id="accordion--style">
+      <label for="accordion--style">Style</label> -->
+
+      <input type="radio" name="tabs" id="accordion--code">
+      <label for="accordion--code">Code</label>
+
+      <div class="tab--content" id="accordion--usage--content">
+        <p class="head--sm mt4">Enables users to expand and collapse sections of content.</p>
+        <p class="mt4">Accordions are best used when users need to consume specific areas of content within a page or when vertical space
+          is limited.</p>
+        <p class="mt4">Use Accordions when there is enough content to condense. Avoid nested Accordions because it increases the cognitive
+          load for users.</p>
+        <p class="mt4">Users may have multiple Accordions open at the same time. The entire header area is clickable to expand or collapse
+          the content below.</p>
+      </div>
+
+      <!-- <div class="tab--content" id="accordion--style--content">
+        <h2 class="head--lg mt4 ">Color</h2>
+        <table class="mt3">
+          <tr>
+            <th>Attribute</th>
+            <th>SCSS</th>
+            <th>&nbsp;</th>
+          </tr>
+          <tr>
+            <td>Label</td>
+            <td>$black--02</td>
+            <td>
+              <div class="swatch--mini swatch--label"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Body</td>
+            <td>$black--02</td>
+            <td>
+              <div class="swatch--mini swatch--body"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Chevron</td>
+            <td>$blue--03</td>
+            <td>
+              <div class="swatch--mini swatch--chevron"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Chevron:hover</td>
+            <td>$blue--04</td>
+            <td>
+              <div class="swatch--mini swatch--chevron--hover"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Divider</td>
+            <td>$white--02</td>
+            <td>
+              <div class="swatch--mini swatch--divider"></div>
+            </td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Typography</h2>
+        <table class="mt3">
+          <tr>
+            <th>Property</th>
+            <th>Size</th>
+            <th>Weight</th>
+          </tr>
+          <tr>
+            <td>Label</td>
+            <td>1rem</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Body</td>
+            <td>0.875rem</td>
+            <td>Regular</td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Structure</h2>
+        <table class="mt3">
+          <tr>
+            <th>Property</th>
+            <th>Height</th>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>2.5rem</td>
+          </tr>
+          <tr>
+            <td>Chevron</td>
+            <td>0.5rem</td>
+          </tr>
+          <tr>
+            <td>Divider</td>
+            <td>1px</td>
+          </tr>
+        </table>
+
+        <table class="mt3">
+          <tr>
+            <th>Property</th>
+            <th>Spacing</th>
+          </tr>
+          <tr>
+            <td>Chevron &amp; label</td>
+            <td>0.5rem</td>
+          </tr>
+          <tr>
+            <td>Content &amp; right edge</td>
+            <td>0.5rem</td>
+          </tr>
+          <tr>
+            <td>Label &amp; content</td>
+            <td>0.5rem</td>
+          </tr>
+          <tr>
+            <td>Content &amp; line</td>
+            <td>1rem</td>
+        </table>
+      </div> -->
+
+      <div class="tab--content" id="accordion--code--content">
+
+        <div class="accordion">
+          <p class="accordion--toggle head--sm mt4">
+            <img src="../lib/img/accordion-chevron.png" class="accordion--chevron">Doggo ipsum the pupper
+          </p>
+          <div class="accordion--content">
+            <p>Fluffer wow such tempt waggy wags most angery pupper I have ever seen you are doin me a doge.</p>
+          </div>
+          <hr class="accordion--divider">
+          <p class="accordion--toggle head--sm mt3"><img src="../lib/img/accordion-chevron.png" class="accordion--chevron">Doggo ipsum the pupper</p>
+          <div class="accordion--content">
+            <p>Fluffer wow such tempt waggy wags most angery pupper I have ever seen you are doin me a doge.</p>
+          </div>
+          <hr class="accordion--divider">
+          <p class="accordion--toggle head--sm mt3"><img src="../lib/img/accordion-chevron.png" class="accordion--chevron">Doggo ipsum the pupper</p>
+          <div class="accordion--content">
+            <p>Fluffer wow such tempt waggy wags most angery pupper I have ever seen you are doin me a doge.</p>
+          </div>
+          <hr class="accordion--divider">
+        </div>
+
+        <p class="code--snippet mt4">&lt;div class="accordion"&gt;
+          <br> &nbsp;&nbsp;&lt;p class="accordion--toggle head--sm mt4"&gt;
+          <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../path/to/img.png" class="accordion--chevron"&gt;Doggo ipsum the pupper&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;div class="accordion--content"&gt;
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Fluffer wow such tempt waggy wags most angery pupper I have ever seen you are
+          doin me a doge.&lt;/p&gt;
+          <br> &nbsp;&nbsp;&lt;/div&gt;
+          </br>
+          &nbsp;&nbsp;&lt;hr class="accordion--divider"&gt;
+          <br> &nbsp;&nbsp;...
+          <br> &lt;/div&gt;
+        </p>
+
+      </div>
+
+      <footer>
+        <p>Doggo&mdash;BarkBox Design System v1.0</p>
+        <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      <script src="../lib/js/functions.js"></script>
+
+</body>
+
+</html>

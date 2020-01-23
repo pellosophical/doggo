@@ -1,0 +1,331 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+     <header>
+        <a href="../index.html">
+            <h1 class="display">Doggo</h1>
+            <p>BarkBox Design System</p>
+          </a>
+      </header>
+      <ul class="nav-links mt4">        
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="color.html">Color</a></li>
+            <li><a href="doodles.html">Doodles</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="layer.html">Layer</a></li>
+            <li><a href="motion.html">Motion</a></li>
+            <li><a href="typography.html" class="active">Typography</a></li>
+            <li><a href="iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../components/library.html">Library</a></li>
+            <li><a href="../components/accordion.html">Accordion</a></li>
+            <li><a href="../components/alerts.html">Alerts</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Style</p>
+        <h1 class="head--xl">Typography</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container tab--container current">
+
+      <input type="radio" name="tabs" id="type--overview" checked="checked">
+      <label for="type--overview">Overview</label>
+
+      <input type="radio" name="tabs" id="type--styles">
+      <label for="type--styles">Styles</label>
+
+      <div class="tab--content" id="type--overview--content">
+
+        <p class="head--sm mt4">Typography is the core structure of any well designed interface.</p>
+        <p class="mt2">It is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through
+          the experience.
+        </p>
+
+        <h2 class=" head--lg mt4 ">Display</h2>
+        <p>Equinox is a versatile & functional hand-drawn display typeface used to inject the Bark brand & character into large-scale
+          sections like the homepage or marketing landing pages.</p>
+        <p class="mt3 display--xs">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+
+        <h2 class=" head--lg mt4 ">Head &amp; copy</h2>
+        <p>Apercu is a grotesque sans-serif typeface with character that distinguishes it from other grotesques. It comes in
+          a variety of weights for establishing clear hierarchy in product design.</p>
+        <p class="mt3 head">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p class="mt3 head">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p class="mt3 head">1 2 3 4 5 6 7 8 9 0</p>
+
+        <h2 class=" head--lg mt4 ">Scale</h2>
+        <p>The typographic scale is designed to keep the number of separate styles to the minimum. We do not necessarily use
+          all sizes, but in the event a new size is necessary, it should be drawn from this scale.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Step</th>
+            <th>rem</th>
+            <th>px</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0.75rem</td>
+            <td>12px</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>0.875rem</td>
+            <td>14px</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>1rem</td>
+            <td>16px</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>1.125rem</td>
+            <td>18px</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>1.25rem</td>
+            <td>20px</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>1.5rem</td>
+            <td>24px</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1.75rem</td>
+            <td>28px</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>2rem</td>
+            <td>32px</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>2.25rem</td>
+            <td>36px</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>2.625rem</td>
+            <td>42px</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>3rem</td>
+            <td>48px</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>3.375rem</td>
+            <td>54px</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>3.75rem</td>
+            <td>60px</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>4.25rem</td>
+            <td>68px</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>4.75rem</td>
+            <td>76px</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>5.25rem</td>
+            <td>84px</td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Font-weight</h2>
+        <p>Font weight is an important typographic style that adds emphasis and is used to differentiate content hierarchy.
+          Font weight and size pairings must be carefully balanced.</p>
+        <p class="apercu--light mt3">Apercu Light</p>
+        <p class="apercu">Apercu Light</p>
+        <p class="apercu--medium">Apercu Light</p>
+
+        <h2 class="head--lg mt4 ">Line-height</h2>
+        <p>Font weight is an important typographic style that adds emphasis and is used to differentiate content hierarchy.
+          Font weight and size pairings must be carefully balanced.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Component</th>
+            <th>Ratio</th>
+          </tr>
+          <tr>
+            <td>Standard UI</td>
+            <td>1:1.5</td>
+          </tr>
+          <tr>
+            <td>Headers</td>
+            <td>1:1.25</td>
+          </tr>
+        </table>
+
+        <h2 class="head--lg mt4 ">Measure</h2>
+        <p>Measure directly contributes to readability and pacing of copy. Lines that are too long degrade eye tracking from
+          line to line, while lines that are too short make it difficult to maintain a steady reading rhythm.</p>
+        <p class="head--sm mt3 ">Line length: 52-78 characters</p>
+      </div>
+
+      <div class="tab--content mt4" id="type--styles--content">
+        <p class="display--sm">BarkBox</p>
+        <p class="code--snippet mt2">.display--sm {
+          <br>&nbsp;&nbsp;font-size: 2.25rem;
+          <br>&nbsp;&nbsp;letter-spacing: -0.09375rem;
+          <br>}
+        </p>
+
+        <p class="display mt4">BarkBox</p>
+        <p class="code--snippet mt2">.display {
+          <br>&nbsp;&nbsp;font-size: 3rem;
+          <br>&nbsp;&nbsp;letter-spacing: -0.125rem;
+          <br>}
+        </p>
+
+        <p class="display--lg mt4">BarkBox</p>
+        <p class="code--snippet mt2">.display--lg {
+          <br>&nbsp;&nbsp;font-size: 3.75rem;
+          <br>&nbsp;&nbsp;letter-spacing: -0.15625rem;
+          <br>}
+        </p>
+
+        <p class="head--xs mt4">BarkBox</p>
+        <p class="code--snippet mt2">.head--xs {
+          <br>&nbsp;&nbsp;font-weight: 500;
+          <br>&nbsp;&nbsp;font-size: 0.875rem;
+          <br>&nbsp;&nbsp;letter-spacing: 0.0625rem;
+          <br>&nbsp;&nbsp;text-transform: uppercase;
+          <br>}
+        </p>
+
+        <p class="head--sm mt4">BarkBox</p>
+        <p class="code--snippet mt2">.head--sm {
+          <br>&nbsp;&nbsp;font-weight: 500;
+          <br>&nbsp;&nbsp;font-size: 1.125rem;
+          <br>}
+        </p>
+
+        <p class="head mt4">BarkBox</p>
+        <p class="code--snippet mt2">.head {
+          <br>&nbsp;&nbsp;font-weight: 500;
+          <br>&nbsp;&nbsp;font-size: 1.5rem;
+          <br>}
+        </p>
+
+        <p class="head--lg mt4">BarkBox</p>
+        <p class="code--snippet mt2">.head--lg {
+          <br>&nbsp;&nbsp;font-size: 1.75rem;
+          <br>}
+        </p>
+
+        <p class="head--xl mt4">BarkBox</p>
+        <p class="code--snippet mt2">.head--xl {
+          <br>&nbsp;&nbsp;font-weight: 100;
+          <br>&nbsp;&nbsp;font-size: 2.25rem;
+          <br>}
+        </p>
+
+        <p class="head--xxl mt4">BarkBox</p>
+        <p class="code--snippet mt2">.head--xxl {
+          <br>&nbsp;&nbsp;font-weight: 100;
+          <br>&nbsp;&nbsp;font-size: 3rem;
+          <br>}
+        </p>
+
+        <p class="longform mt4">BarkBox</p>
+        <p class="code--snippet mt2">.longform {
+          <br>&nbsp;&nbsp;font-size: 1.125rem;
+          <br>}
+        </p>
+
+        <p class="caption mt4">BarkBox</p>
+        <p class="code--snippet mt2">.caption {
+          <br>&nbsp;&nbsp;font-size: 0.875rem;
+          <br>&nbsp;&nbsp;color: #6E7376;
+          <br>}
+        </p>
+
+      </div>
+
+      <footer>      
+      <p>Doggo&mdash;BarkBox Design System v1.0</p>
+      <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+    </footer>
+
+    </div>    
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin=" anonymous "></script>
+  <script src="../lib/js/functions.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+     <header>
+        <a href="../index.html">
+            <h1 class="display">Doggo</h1>
+            <p>BarkBox Design System</p>
+          </a>
+      </header>
+      <ul class="nav-links mt4">        
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="color.html" class="active">Color</a></li>
+            <li><a href="doodles.html">Doodles</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="layer.html">Layer</a></li>
+            <li><a href="motion.html">Motion</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../components/library.html">Library</a></li>
+            <li><a href="../components/accordion.html">Accordion</a></li>
+            <li><a href="../components/alerts.html">Alerts</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Style</p>
+        <h1 class="head--xl">Color</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container tab--container">
+
+      <input type="radio" name="tabs" id="color--swatches" checked="checked">
+      <label for="color--swatches">Swatches</label>
+
+      <input type="radio" name="tabs" id="color--usage">
+      <label for="color--usage">Usage</label>
+
+      <div class="tab--content" id="color--swatches--content">
+        <h2 class=" head--lg mt4 ">Core palette</h2>
+        <p>Our primary palette is comprised of neutrals, white, and blue.</p>
+        <div class="palette">
+          <ul>
+            <li class="blue--01">$blue--01<span class="fr">#E4F3FA</span></li>
+            <li class="blue--02">$blue--02<span class="fr">#7CD6FC</span></li>
+            <li class="blue--03">$blue--03<span class="fr">#42B0E2</span></li>
+            <li class="blue--04">$blue--04<span class="fr">#068DC7</span></li>
+            <li class="blue--05">$blue--05<span class="fr">#08719E</span></li>
+          </ul>
+          <ul>
+            <li class="white--01">$white--01<span class="fr">#FFFFFF</span></li>
+            <li class="white--02">$white--02<span class="fr">#F6F7F8</span></li>
+            <li class="white--03">$white--03<span class="fr">#CFD2D3</span></li>
+            <li class="white--04">$white--04<span class="fr">#9EA7AA</span></li>
+          </ul>
+          <ul>
+            <li class="black--01">$black--01<span class="fr">#6E7376</span></li>
+            <li class="black--02">$black--02<span class="fr">#2F373B</span></li>
+            <li class="black--03">$black--03<span class="fr">#1D2427</span></li>
+          </ul>
+        </div>
+
+        <h2 class="head--lg mt4">Extended palette</h2>
+        <p>Used to highlight important features on a page, such as alerts. They should never overpower core colors.</p>
+        <div class="palette">
+          <ul>
+            <li class="green--01">$green--01<span class="fr">#B4DC5E</span></li>
+            <li class="green--02">$green--01<span class="fr">#91BE3A</span></li>
+            <li class="green--03">$green--01<span class="fr">#719D1F</span></li>
+          </ul>
+          <ul>
+            <li class="yellow--01">$yellow--01<span class="fr">#FFE39A</span></li>
+            <li class="yellow--02">$yellow--02<span class="fr">#FFCB42</span></li>
+            <li class="yellow--03">$yellow--03<span class="fr">#FFB700</span></li>
+          </ul>
+          <ul>
+            <li class="red--01">$red--01<span class="fr">#EF7B7B</span></li>
+            <li class="red--02">$red--02<span class="fr">#CC3E3F</span></li>
+            <li class="red--03">$red--03<span class="fr">#A72120</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab--content" id="color--usage--content">
+        <p class="head--sm mt4">Color brings a design to life.</p>
+        <p class="mt2">It's used to express emotion and tone, place emphasis, and create associations. Color should always be used in meaningful
+          and intentional ways to establish patterns and create visual cues.</p>
+        <h2 class="head--lg mt4">Palette</h2>
+        <p>We've developed a color system that helps users find people, identify status, see actions, to locate help, and to
+          indicate next steps. The consistent use of color keeps cognitive loads low and makes for a unified and engaging
+          user experience.</p>
+        <h2 class="head--lg mt4">Contrast</h2>
+        <p>We are committed to complying with AA standard contrast ratios. To do this, choose primary, secondary and extended
+          colors that support usability by ensuring sufficient color contrast between elements so that users with low vision
+          can see and use the interface.</p>
+        <p class="head--sm mt4">Pass</p>
+        <div class="grid contrast--grid mt3">
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_pass_a.png">
+            <p class="mt2">7.98</p>
+            <p class="caption">$white--02 / $black--02</p>
+          </div>
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_pass_b.png">
+            <p class="mt2">4.80</p>
+            <p class="caption">$black--01 / $white--01</p>
+          </div>
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_pass_c.png">
+            <p class="mt2">5.06</p>
+            <p class="caption">$white--03 / $blue--05</p>
+          </div>
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_pass_d.png">
+            <p class="mt2">7.44</p>
+            <p class="caption">$black--01 / $blue--02</p>
+          </div>
+          <div class="contrast--palette">
+          </div>
+        </div>
+        <p class="head--sm mt4">Fail</p>
+        <div class="grid contrast--grid mt3">
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_fail_a.png">
+            <p class="mt2">2.41</p>
+            <p class="caption">$white--01 / $blue--01</p>
+          </div>
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_fail_b.png">
+            <p class="mt2">3.33</p>
+            <p class="caption">$blue--02 / $blue--05</p>
+          </div>
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_fail_c.png">
+            <p class="mt2">3.28</p>
+            <p class="caption">$white--03 / $black--03</p>
+          </div>
+          <div class="contrast--palette">
+            <img src="../lib/img/contrast_fail_d.png">
+            <p class="mt2">3.16</p>
+            <p class="caption">$black--01 / $white--02</p>
+          </div>
+          <div class="contrast--palette">
+          </div>
+        </div>
+      </div>
+
+      <footer>      
+      <p>Doggo&mdash;BarkBox Design System v1.0</p>
+      <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+    </footer>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="../lib/js/functions.js"></script>
+
+</body>
+
+</html>

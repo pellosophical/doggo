@@ -1,0 +1,182 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+     <header>
+        <a href="../index.html">
+            <h1 class="display">Doggo</h1>
+            <p>BarkBox Design System</p>
+          </a>
+      </header>
+      <ul class="nav-links mt4">        
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="color.html">Color</a></li>
+            <li><a href="doodles.html">Doodles</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="layer.html">Layer</a></li>
+            <li><a href="motion.html">Motion</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="iconography.html" class="active">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../components/library.html">Library</a></li>
+            <li><a href="../components/accordion.html">Accordion</a></li>
+            <li><a href="../components/alerts.html">Alerts</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Style</p>
+        <h1 class="head--xl">Iconography</h1>
+        <hr>        
+    </section>
+
+    <div class="container tab--container current">
+
+
+       <input type="radio" name="tabs" id="icon--library" checked="checked">
+      <label for="icon--library">Library</label>
+
+      <input type="radio" name="tabs" id="icon--usage">
+      <label for="icon--usage">Usage</label>
+
+       <div class="tab--content" id="icon--library--content">
+        <section class="icon--grid mt4">
+          <div class="icon--single"><i class="fa fa-google" aria-hidden="true"></i></div>
+          <div class="icon--single"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+          <div class="icon--single"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+          <div class="icon--single"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        </section>
+      </div>
+
+      <div class="tab--content" id="icon--usage--content">
+
+        <p class="head--sm mt4">Iconography uses images and symbols to represent an object visually. </p>
+        <p class="mt2">They communicate a message and should be distinct and informative. Icons should be used sparingly throughout the
+          product to provide clarity and reduce cognitive load on users.</p>
+
+        <h2 class=" head--lg mt4 ">Size</h2>
+        <p>UI icons come in two sizes: 24px and 16px. While most icons occupy a square artboard, some icons may occupy a rectangular
+          artboard where the width or height of the icons is either 24px or 16px.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Usage</th>
+            <th>rem</th>
+            <th>px</th>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>1.5rem</td>
+            <td>24px</td>
+          </tr>
+          <tr>
+            <td>Glyph</td>
+            <td>1rem</td>
+            <td>16px</td>
+          </tr>
+        </table>
+
+        <h2 class=" head--lg mt4 ">Space</h2>
+        <p>When creating icons, do not add internal padding with Sketch or Illustrator. If the icon needs padding, it can added
+          with CSS.</p>
+
+        <p class="mt3">When using icons, all touch targets need to be 3rem (48px) or higher. Developers can add padding to a touch target
+          with CSS to meet the requirement if necessary.</p>
+
+        <h2 class=" head--lg mt4 ">Color</h2>
+        <p>Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always
+          a solid color. The color of the icon should depend on the importance of the icon's action.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Action</th>
+            <th>Color</th>
+          </tr>
+          <tr>
+            <td>Primary</td>
+            <td>$blue--3</td>
+          </tr>
+          <tr>
+            <td>Primary hover</td>
+            <td>$blue--4</td>
+          </tr>
+          <tr>
+            <td>Secondary</td>
+            <td>$black--1</td>
+          </tr>
+          <tr>
+            <td>Secondary hover</td>
+            <td>$blue--3</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <footer>      
+      <p>Doggo&mdash;BarkBox Design System v1.0</p>
+      <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+    </footer>
+     
+
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin=" anonymous "></script>
+    <script src="../lib/js/functions.js "></script>
+
+</body>
+
+</html>

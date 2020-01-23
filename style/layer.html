@@ -1,0 +1,202 @@
+<html>
+
+<head>
+  <title>Doggo Design System</title>
+  <meta name="description" content="BarkBox product design system">
+  <meta name="author" content="BarkBox">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+</head>
+
+<body>
+
+  <a class="menu-toggle">
+    <button class="hamburger hamburger--collapse is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </a>
+
+  <nav class="nav-menu nav-menu-slide">
+    <div class="nav--container">
+     <header>
+        <a href="../index.html">
+            <h1 class="display">Doggo</h1>
+            <p>BarkBox Design System</p>
+          </a>
+      </header>
+      <ul class="nav-links mt4">        
+        <li class="toggle"><a>Get Started <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../get-started/designers.html">Designers</a></li>
+            <li><a href="../get-started/developers.html">Developers</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Guidelines <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../guidelines/brand.html">Brand</a></li>
+            <li><a href="../guidelines/content.html">Content</a></li>
+            <li><a href="../guidelines/design.html">Design</a></li>
+            <li><a href="../guidelines/accessibility.html">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="toggle toggle--active"><a>Style <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="color.html">Color</a></li>
+            <li><a href="doodles.html">Doodles</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="layer.html" class="active">Layer</a></li>
+            <li><a href="motion.html">Motion</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="iconography.html">Iconography</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>Components <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../components/library.html">Library</a></li>
+            <li><a href="../components/accordion.html">Accordion</a></li>
+            <li><a href="../components/alerts.html">Alerts</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+          </ul>
+        </li>
+        <li class="toggle"><a>SCSS <i class="fa  fa-chevron-down" aria-hidden="true"></i></a>
+          <ul class="sub-links">
+            <li><a href="../scss/tokens.html">Tokens</a></li>
+            <li><a href="../scss/utilities.html">Utilities</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap wrap--slide">
+
+    <section class="page--intro">
+      <div class="container">
+        <p class="light">Style</p>
+        <h1 class="head--xl">Layer</h1>
+        <hr>
+      </div>
+    </section>
+
+    <div class="container tab--container current">
+
+      <input type="radio" name="tabs" id="layer--overview" checked="checked">
+      <label for="layer--overview">Overview</label>
+
+      <input type="radio" name="tabs" id="layer--usage">
+      <label for="layer--usage">Usage</label>
+
+      <div class="tab--content" id="layer--overview--content">
+
+        <p class="head--sm mt4">Layer is the surface on which content and components live.</p>
+        <p class="mt2">It is a visual motif used to create groupings and associations between content as well as hierarchy and focus through
+          depth.
+        </p>
+
+        <section class="layer--examples mt3">
+          <div class="layer--card layer--base">0
+            <br>Base</div>
+          <div class="layer--card layer--flat">1
+            <br>Flat</div>
+          <div class="layer--card layer--raised">2
+            <br>Raised</div>
+          <div class="layer--card layer--elevated">4
+            <br>Elevated</div>
+          <div class="layer--card layer--overlay">8
+            <br>Overlay</div>
+          <div class="layer--card layer--popout">16
+            <br>Pop-out</div>
+        </section>
+
+        <h2 class="head--lg mt4 ">Components</h2>
+        <p>A guide to the appropriate layer value for components in Doggo.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Layer</th>
+            <th>Components</th>
+          </tr>
+          <tr>
+            <td>Base</td>
+            <td>Detail page header</td>
+          </tr>
+          <tr>
+            <td>Flat</td>
+            <td>Tables, cards</td>
+          </tr>
+          <tr>
+            <td>Raised</td>
+            <td>Dropdown, tooltip</td>
+          </tr>
+          <tr>
+            <td>Elevated</td>
+            <td>Sticky nav</td>
+          </tr>
+          <tr>
+            <td>Overlay</td>
+            <td>Cart</td>
+          </tr>
+          <tr>
+            <td>Pop-out</td>
+            <td>Modal</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="tab--content" id="layer--usage--content">
+        <h2 class="head--lg mt4 ">Code</h2>
+        <p>Simply include the layer mixin with the appropriate layer value.</p>
+
+        <table class="mt3">
+          <tr>
+            <th>Layer</th>
+            <th>Mixin</th>
+          </tr>
+          <tr>
+            <td>Base</td>
+            <td>@include layer('base')</td>
+          </tr>
+          <tr>
+            <td>Flat</td>
+            <td>@include layer('flat')</td>
+          </tr>
+          <tr>
+            <td>Raised</td>
+            <td>@include layer('raised')</td>
+          </tr>
+          <tr>
+            <td>Elevated</td>
+            <td>@include layer('elevated')</td>
+          </tr>
+          <tr>
+            <td>Overlay</td>
+            <td>@include layer('overlay')</td>
+          </tr>
+          <tr>
+            <td>Pop-out</td>
+            <td>@include layer('pop-out')</td>
+          </tr>
+        </table>
+      </div>
+
+      <footer>      
+      <p>Doggo&mdash;BarkBox Design System v1.0</p>
+      <p class="caption">Updated on January 1, 2018 at 12:00 AM</p>
+    </footer>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin=" anonymous "></script>
+  <script src="../lib/js/functions.js "></script>
+
+</body>
+
+</html>
